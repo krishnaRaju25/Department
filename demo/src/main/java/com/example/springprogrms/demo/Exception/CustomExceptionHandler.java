@@ -43,4 +43,5 @@ public class CustomExceptionHandler {
         headers.add("message", "Id should not be less than zero.");
         return new ResponseEntity<Object>(null, headers, HttpStatus.BAD_REQUEST);
     }
+
 }

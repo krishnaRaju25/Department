@@ -73,8 +73,14 @@ public class DepartmentController implements IDepartmentController {
         return new ResponseEntity<List<Department>>(departmentService.getAlldep(), HttpStatus.OK);
     }
 
+    @GetMapping("/allcity/{city}")
+    public List<Department> getallCity(@PathVariable(name = "city") String city)
+    {
+        return departmentService.getAllCity(city);
 
     }
+
+}
 
 
 

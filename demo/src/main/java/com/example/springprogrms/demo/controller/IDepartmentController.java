@@ -16,5 +16,7 @@ public interface IDepartmentController {
 
     public abstract ResponseEntity<List<Department>> getAlldep();
 
+   // public Department  getAllCity(Department dep);
+
 
 }
